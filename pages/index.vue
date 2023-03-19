@@ -129,7 +129,7 @@ const scrollToElementContact = (options) => {
       </div>
       <div class="sm:col-start-8 sm:col-end-11 self-center">
         <div class="bg-cyan-900">
-          <img src="../images/me.jpeg" class="mix-blend-overlay hover:mix-blend-normal" alt="me">
+          <img src="/images/me.jpeg" class="mix-blend-overlay hover:mix-blend-normal" alt="me">
         </div>
       </div>
 
