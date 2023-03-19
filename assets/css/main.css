@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    background-color: #0a192f;
+}
+    ::selection {
+        color: white;
+        background: #5c6ac4;
+    }
+
+.nuxt-link-exact-active {
+    color: #5c6ac4;
+}
