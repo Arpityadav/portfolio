@@ -29,12 +29,12 @@ const scrollToElementContact = (options) => {
   <div class="container mx-auto">
     <div class="">
       <nav class="absolute top-1 right-1 py-2 flex flex-1 mt-4 sm:items-center justify-center content-center sm:relative">
-        <div class="flex flex-1 justify-end content-center text-gray-700 mr-8 mx-auto items-center">
-          <span class="mr-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementAboutMe"><span class="text-cyan-500 ">01 </span>&nbsp;About</span>
-          <span class="mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementExperience" ><span class="text-cyan-500 ">02 </span>&nbsp;Experience</span>
-          <span class="mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementWork" ><span class="text-cyan-500 ">03 </span>&nbsp;Work</span>
-          <span class="mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementContact" ><span class="text-cyan-500 ">04 </span>&nbsp;Contact</span>
-          <a target="_top" href="#" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
+        <div class="flex flex-1 justify-end content-center text-gray-700 mr-0 sm:mr-8 mx-auto items-center">
+          <span class="mr-0 sm:mr-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementAboutMe"><span class="text-cyan-500 mr-0.5">01 </span>About</span>
+          <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementExperience" ><span class="text-cyan-500 mr-0.5">02 </span>Experience</span>
+          <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementWork" ><span class="text-cyan-500 mr-0.5">03 </span>Work</span>
+          <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementContact" ><span class="text-cyan-500 mr-0.5">04 </span>Contact</span>
+          <a target="_top" href="#" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-3 sm:px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
         </div>
       </nav>
 
@@ -65,16 +65,16 @@ const scrollToElementContact = (options) => {
 
         <p class="text-gray-300 text-xl">Education and Certifications:</p>
         <ul class="text-gray-300 text-white">
-          <li class="flex">
+          <li class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+                 stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
             </svg>
-            Bachelor's degree in Computer Science from XYZ University
+            Bachelor's degree in Information Technology from AKTU University
           </li>
-          <li class="flex">
+          <li class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+                 stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
             </svg>
             AWS Certified Developer - Associate
@@ -84,40 +84,40 @@ const scrollToElementContact = (options) => {
         <p class="text-gray-300 text-xl">Here are a few technologies I’ve been working with recently:</p>
         <div class="grid grid-cols-2">
           <ul class="col-span-1 text-white">
-            <li class="flex">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               Laravel
             </li>
-            <li class="flex ">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               Vue
             </li>
-            <li class="flex mr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               Solidity
             </li>
           </ul>
           <ul class="col-span-1 text-white">
-            <li class="flex mr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               React
             </li>
-            <li class="flex mr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               Inertia
             </li>
-            <li class="flex mr-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-cyan-700 mr-1">
+            <li class="flex mr-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
               Livewire
