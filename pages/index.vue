@@ -34,7 +34,7 @@ const scrollToElementContact = (options) => {
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementExperience" ><span class="text-cyan-500 mr-0.5">02 </span>Experience</span>
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementWork" ><span class="text-cyan-500 mr-0.5">03 </span>Work</span>
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementContact" ><span class="text-cyan-500 mr-0.5">04 </span>Contact</span>
-          <a target="_top" href="#" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-3 sm:px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
+          <a href="https://drive.google.com/file/d/1UhTsuawCvhFfOt44Yc8thOu95Z6-LX7e/view?usp=share_link" target="_blank" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-3 sm:px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
         </div>
       </nav>
 
@@ -48,8 +48,7 @@ const scrollToElementContact = (options) => {
                 <div class="flex flex-col space-y-4">
                     <h2 class="text-gray-500 lg:text-7xl sm:text-6xl text-4xl font-bold">I build things on the web.</h2>
                     <p class="lg:w-1/2 sm:text-lg text-base text-gray-500 tracking-normal">I’m a software engineer specializing in
-                        building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on
-                        building accessible, human-centered products</p>
+                        building exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products</p>
                 </div>
             </div>
         </header>
@@ -61,7 +60,7 @@ const scrollToElementContact = (options) => {
       <div class="md:col-start-1 lg:col-start-3 md:col-end-8 lg:col-end-8 flex flex-col space-y-6 mx-6">
         <h1 class="text-cyan-500 text-xl mono">01. About</h1>
 
-        <p class="text-gray-300 ">Hey there! My name is Arpit and  I'm a backend developer with a passion for building web applications that solve real-world problems. With over 5 years of experience in the field, I've worked on everything from fintech platforms to social media apps.</p>
+        <p class="text-gray-300 ">Hey there! My name is Arpit and  I'm a backend developer with a passion for building web applications that solve real-world problems. With over 4 years of experience in the field, I've worked on everything from fintech platforms to social media apps.</p>
 
         <p class="text-gray-300 text-xl">Education and Certifications:</p>
         <ul class="text-gray-300 text-white">
@@ -70,14 +69,14 @@ const scrollToElementContact = (options) => {
                  stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
             </svg>
-            Bachelor's degree in Information Technology from AKTU University
+            Bachelor's degree in Information Technology from AKTU University (2018-2022)
           </li>
           <li class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
             </svg>
-            AWS Certified Developer - Associate
+            Build Responsive website using HTML5, CSS3 and Javascript (Udemy)
           </li>
         </ul>
 
@@ -202,7 +201,7 @@ const scrollToElementContact = (options) => {
                  class="mix-blend-overlay hover:mix-blend-normal lg:max-w-3xl">
           </div>
           <div class="flex flex-col self-center space-y-4 w-full">
-            <h2 class="text-4xl tracking-tighter text-gray-300 hover:text-gray-400 hover:underline mt-4 inline-block"><a :href="work.link" v-text="work.name" target="_blank"></a></h2>
+            <h2 class="text-4xl tracking-tighter text-gray-300 hover:text-gray-400 mt-4 inline-block"><a :href="work.link" v-text="work.name" target="_blank"></a></h2>
             <ul class="shadow-2xl rounded p-4 flex flex-col space-y-4 sha">
               <li class="sha text-gray-400 text-sm" v-for="points in work.points" v-text="points"></li>
             </ul>
@@ -216,53 +215,37 @@ const scrollToElementContact = (options) => {
     <div class="col-start-2 col-end-12">
       <div class="flex  mt-32" v-for="work in personalExperience" :key="work.id">
         <div class="flex flex-col lg:flex-row space-x-4">
-
           <div class="bg-cyan-900 flex flex-col align-center justify-center content-center lg:w-3/5">
             <img :src="work.img_url" :alt="work.name"
                  class="mix-blend-overlay hover:mix-blend-normal lg:max-w-3xl">
           </div>
           <div class="flex flex-col self-center space-y-4 w-full">
-            <h2 class="text-4xl tracking-wider text-gray-200"><a :href="work.link" v-text="work.name"></a></h2>
+            <h2 class="text-4xl tracking-tighter text-gray-300 hover:text-gray-400 mt-4 inline-block"><a :href="work.link" v-text="work.name"></a></h2>
             <ul class="shadow-2xl rounded p-4 flex flex-col space-y-4 sha">
-              <li class="sha text-white" v-for="points in work.points" v-text="points"></li>
+              <li class="sha text-gray-400 text-sm" v-for="points in work.points" v-text="points"></li>
             </ul>
+            <p v-if="work.note !== null" class="text-gray-400 tracking-wide" v-html="'Note: ' + work.note"></p>
           </div>
         </div>
       </div>
+
+      <div class="mt-12 text-center text-gray-300 hover:text-gray-400"><a target="_blank" href="https://github.com/Arpityadav?tab=repositories">View All Projects</a><svg class="h-4 ml-1 inline" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+      </svg></div>
     </div>
   </div>
     <!-- <Timeline /> -->
     </div>
   </div>
 
-  <div class=" flex items-center justify-center h-screen mx-12 sm:mx-24 lg:grid lg:grid-cols-12" ref="contact">
+  <div class=" flex flex-col items-center justify-center h-screen mx-12 sm:mx-24 lg:grid lg:grid-cols-12" ref="contact">
 
       <div class=" space-y-6 text-center lg:col-start-4 lg:col-end-10">
         <h4 class="text-cyan-500 text-xl mono">04. What's Next?</h4>
-        <h1 class="text-3xl text-white text-5xl">Get In Touch</h1>
-        <p class="text-gray-400 text-lg">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <h1 class="text-3xl text-gray-100 text-5xl">Get In Touch</h1>
+        <p class="text-gray-400 text-lg">I'm always open to hearing about new opportunities and projects, so please feel free to get in touch with me. Or just say Hi!</p>
         <a href="mailto:arpit.yadav1912@gmail.com" class="border-2 inline-block border-cyan-500 text-cyan-500 px-8  text-sm py-4 rounded hover:bg-cyan-500 hover:text-white ">Say Hello</a>
-      </div>
 
+      </div>
   </div>
 </template>
-
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-* {
-  font-family: 'Fira Sans', sans-serif;
-}
-.mono {
-  font-family: 'Space Mono', monospace;
-}
-
-::selection {
-  color: white;
-  background: #5c6ac4;
-}
-
-.sha{
-  background-color: #112240;
-}
-</style>

@@ -71,13 +71,14 @@ const personalExperience = ref([
         'id': 1,
         'name': 'Cyberbub',
         'img_url': '../images/cyberbub.png',
-        'link': null,
+        'link': 'https://github.com/Arpityadav/ArrayX',
         'points': [
             'Created with Laravel, Vue and Tailwind (and many other services like Algolia, Pusher, etc)',
             'Backend is fully backed with TDD (PHPUnit)',
             'A personal project that lets you to find your coding partner',
             'You can chat, manage tasks and do many things in real time'
-        ]
+        ],
+        'note': 'Currently working on successor of this project: <a href="https://github.com/Arpityadav/wrup">wrup</a>'
     },
     {
         'id': 2,
@@ -88,7 +89,8 @@ const personalExperience = ref([
             'Created with Laravel, Vue and Bootstrap',
             'Backend is fully backed with TDD (PHPUnit)',
             'Based on video series by Jeffrey Way on Laracasts'
-        ]
+        ],
+        'note': null
     },
     {
         'id': 3,
@@ -98,7 +100,8 @@ const personalExperience = ref([
         'points': [
             'Created with Laravel, AlpineJS, Livewire, Tailwind CSS and The Movie DB REST API',
             'Test Driven Development (PHPUnit)'
-        ]
+        ],
+        'note': null
     },
     {
         'id': 4,
@@ -111,7 +114,8 @@ const personalExperience = ref([
             'Users can create a thread and vote to other threads in real time',
             'Comments and Replies in a thread will be posted in real time',
             'Created just for fun and to test my knowledge, also does not have the all the reddit functions (ofcourse!)'
-        ]
+        ],
+        'note': null
     },
     {
         'id': 5,
@@ -122,7 +126,8 @@ const personalExperience = ref([
             'Created with Laravel,Vue and Tailwind CSS',
             'Backend is fully backed with TDD (PHPUnit)',
             'Based on video series by Jeffrey Way on Laracasts'
-        ]
+        ],
+        'note': null
     },
 ]);
 

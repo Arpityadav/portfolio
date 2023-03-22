@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 *{
     background-color: #0a192f;
+    font-family: 'Fira Sans', sans-serif;
 }
-    ::selection {
-        color: white;
-        background: #5c6ac4;
-    }
 
-.nuxt-link-exact-active {
-    color: #5c6ac4;
+.mono {
+    font-family: 'Space Mono', monospace;
+}
+
+::selection {
+    color: white;
+    background: #5c6ac4;
+}
+
+
+.sha{
+    background-color: #112240;
 }
