@@ -34,7 +34,7 @@ const scrollToElementContact = (options) => {
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementExperience" ><span class="text-cyan-500 mr-0.5">02 </span>Experience</span>
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementWork" ><span class="text-cyan-500 mr-0.5">03 </span>Work</span>
           <span class="mx-1 sm:mx-4 mono text-xs font-bold cursor-pointer" @click="scrollToElementContact" ><span class="text-cyan-500 mr-0.5">04 </span>Contact</span>
-          <a href="https://drive.google.com/file/d/1UhTsuawCvhFfOt44Yc8thOu95Z6-LX7e/view?usp=share_link" target="_blank" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-3 sm:px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
+          <a href="https://drive.google.com/file/d/1RAkKqUr9rOOZyA63aelVSp07pe_TyFnI/view?usp=sharing" target="_blank" class="mono text-xs font-bold border-2 border-cyan-500 text-cyan-500 px-3 sm:px-6 text-sm py-2 rounded hover:bg-cyan-500 hover:text-white">Resume</a>
         </div>
       </nav>
 
@@ -69,6 +69,20 @@ const scrollToElementContact = (options) => {
                  stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
             </svg>
+            AZ-900: Microsoft Azure Fundamentals
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+            </svg>
+            Google Cloud Fundamentals: Core Infrastructure
+          </li>
+          <li class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+            </svg>
             Bachelor's degree in Information Technology from AKTU University (2018-2022)
           </li>
           <li class="flex items-center">
@@ -93,13 +107,13 @@ const scrollToElementContact = (options) => {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              Vue
+              GCP
             </li>
             <li class="flex mr-2 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              Solidity
+              React
             </li>
           </ul>
           <ul class="col-span-1 text-white">
@@ -107,19 +121,19 @@ const scrollToElementContact = (options) => {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              React
+              AWS
             </li>
             <li class="flex mr-2 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              Inertia
+              Vue
             </li>
             <li class="flex mr-2 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-cyan-700 mr-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              Livewire
+              Tailwind
             </li>
           </ul>
         </div>
